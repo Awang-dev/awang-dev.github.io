@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tanaya Awang Ranumeru | Portofolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #eef1f6;
+            --surface: #ffffff;
+            --ink: #14213d;
+            --muted: #55607a;
+            --accent: #e8590c;
+            --line: #cfd6e4;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Bricolage Grotesque', system-ui, sans-serif;
+            background: var(--bg);
+            color: var(--ink);
+            line-height: 1.6;
+        }
+        a { color: inherit; }
+        a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+        .wrap { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+
+        header.nav { padding: 20px 0; border-bottom: 1px solid var(--line); }
+        header.nav .wrap { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
+        .brand { font-weight: 800; text-decoration: none; }
+        nav a { margin-left: 20px; text-decoration: none; color: var(--muted); font-weight: 600; }
+        nav a:hover { color: var(--accent); }
+
+        .hero { padding: 72px 0 56px; }
+        .hero p.hi { color: var(--muted); font-size: 1.1rem; margin-bottom: 8px; }
+        .hero h1 {
+            font-size: clamp(2.6rem, 9vw, 5.6rem);
+            line-height: 1;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            max-width: 14ch;
+        }
+        .hero .role { margin-top: 24px; font-size: 1.25rem; max-width: 46ch; color: var(--muted); }
+        .hero .role strong { color: var(--ink); }
+        .btn {
+            display: inline-block; margin-top: 28px; padding: 12px 22px;
+            background: var(--ink); color: #fff; text-decoration: none;
+            border-radius: 6px; font-weight: 600;
+        }
+        .btn:hover { background: var(--accent); }
+
+        section { padding: 48px 0; border-top: 1px solid var(--line); }
+        h2 { font-size: 1.8rem; letter-spacing: -0.02em; margin-bottom: 24px; }
+
+        dl.identitas { display: grid; grid-template-columns: 180px 1fr; gap: 12px 24px; max-width: 640px; }
+        dl.identitas dt { color: var(--muted); font-weight: 600; }
+        dl.identitas dd { font-weight: 600; }
+
+        .kegiatan { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+        .kegiatan article { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 22px; }
+        .kegiatan h3 { font-size: 1.1rem; margin-bottom: 8px; }
+        .kegiatan p { color: var(--muted); }
+
+        .goal { background: var(--ink); color: #fff; border-radius: 10px; padding: 36px; }
+        .goal h2 { color: #fff; margin-bottom: 12px; }
+        .goal p { max-width: 52ch; color: #d5dbea; }
+        .goal .big { font-size: clamp(1.4rem, 4vw, 2rem); font-weight: 800; color: #fff; margin-bottom: 12px; }
+
+        .tags { list-style: none; display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+        .tags li { border: 2px solid var(--ink); border-radius: 999px; padding: 4px 16px; font-weight: 600; }
+
+        footer { padding: 32px 0 48px; border-top: 1px solid var(--line); color: var(--muted); font-size: .95rem; }
+
+        @media (max-width: 560px) {
+            dl.identitas { grid-template-columns: 1fr; gap: 2px; }
+            dl.identitas dd { margin-bottom: 12px; }
+            nav a { margin: 0 16px 0 0; }
+        }
+        @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+    </style>
+</head>
+<body>
+
+<header class="nav">
+    <div class="wrap">
+        <a class="brand" href="#top">Tanaya Awang Ranumeru</a>
+        <nav aria-label="Navigasi utama">
+            <a href="#tentang">Tentang</a>
+            <a href="#kegiatan">Kegiatan</a>
+            <a href="#cita-cita">Cita-cita</a>
+            <a href="#fokus">Fokus IT</a>
+        </nav>
+    </div>
+</header>
+
+<main id="top">
+    <div class="wrap">
+        <div class="hero">
+            <p class="hi">Halo, saya</p>
+            <h1>Tanaya Awang Ranumeru</h1>
+            <p class="role">Mahasiswa angkatan <strong>Akt 25</strong> yang sedang belajar dan mendalami <strong>Web Dev</strong>.</p>
+            <a class="btn" href="#tentang">Kenali saya</a>
+        </div>
+
+        <section id="tentang">
+            <h2>Tentang saya</h2>
+            <dl class="identitas">
+                <dt>Nama</dt><dd>Tanaya Awang Ranumeru</dd>
+                <dt>NIM</dt><dd>2505090037</dd>
+                <dt>Tahun angkatan</dt><dd>Akt 25</dd>
+                <dt>Cita-cita</dt><dd>PNS dengan side job Web Dev</dd>
+            </dl>
+        </section>
+
+        <section id="kegiatan">
+            <h2>Selain kuliah</h2>
+            <div class="kegiatan">
+                
+                    <article>
+                        <h3>Belajar Programming</h3>
+                        <p>Rutin latihan coding dan membangun project kecil untuk mengasah kemampuan.</p>
+                    </article>
+                
+                    <article>
+                        <h3>Hangout bersama teman-teman</h3>
+                        <p>Waktu santai untuk bertukar cerita, ide, dan menjaga keseimbangan di luar kuliah.</p>
+                    </article>
+                
+                    <article>
+                        <h3>Mengikuti intern</h3>
+                        <p>Mencari pengalaman kerja langsung supaya paham dunia profesional lebih awal.</p>
+                    </article>
+                
+            </div>
+        </section>
+
+        <section id="cita-cita">
+            <div class="goal">
+                <h2>Cita-cita</h2>
+                <p class="big">PNS dengan side job Web Dev</p>
+                <p>Berkarier sebagai abdi negara, sambil tetap mengembangkan keahlian membuat website sebagai pekerjaan sampingan.</p>
+            </div>
+        </section>
+
+        <section id="fokus">
+            <h2>Bidang IT yang ingin diperdalam</h2>
+            <p>Saya ingin memperdalam <strong>Web Dev</strong>: merancang dan membangun website yang rapi, cepat, dan mudah dipakai.</p>
+            <ul class="tags">
+                
+                    <li>HTML</li>
+                
+                    <li>CSS</li>
+                
+                    <li>PHP</li>
+                
+                    <li>JavaScript</li>
+                
+            </ul>
+        </section>
+    </div>
+</main>
+
+<footer>
+    <div class="wrap">
+        &copy; 2026 Tanaya Awang Ranumeru &middot; NIM 2505090037
+    </div>
+</footer>
+
+</body>
+</html>
